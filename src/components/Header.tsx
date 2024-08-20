@@ -3,15 +3,16 @@ import Logo from '../assets/image 22.svg'
 
 const Header: React.FC = () => {
   return (
-    <header className='bg-blue-900'>
-      <nav>
-        <div>
-          <img src={Logo}></img>
+    <header className='bg-blue-900 flex justify-between items-center p-4'>
+      <div className='flex-shrink-0'>
+          <img src={Logo} alt='Logo'></img>
         </div>
-        <ul className='text-white p-5 end'>
+      <nav>
+        <ul className='text-white flex space-x-4'>
           <li><a href="#home">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#features">Eatery</a></li>
+          <li><a href="#contact">News</a></li>
+          <li><a href="#contact">About Us</a></li>
         </ul>
       </nav>
     </header>
