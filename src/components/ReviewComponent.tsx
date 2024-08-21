@@ -32,7 +32,7 @@ const ReviewComponent: React.FC = () => {
   return (
     <section className=" bg-blue-100">
       <div>
-        <p className="text-blue-800 font-bold p-5">Review</p>
+        <p className="text-blue-800 font-semibold p-5">Review</p>
       </div>
       <div className='grid grid-cols-3 bg-blue-100 gap-4'>
         {currentReviews.map((review, index) => (

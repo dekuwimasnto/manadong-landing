@@ -31,7 +31,7 @@ const FoodGrid: React.FC = () => {
                         className="w-auto h-auto cursor-pointer"
                         onClick={() => setSelectedFood(food)}
                     />
-                    <p className="font-bold text-xs">{food.title}</p>
+                    <p className="font-semibold text-xs">{food.title}</p>
                     {/* <p className='font-bold text-xs'>{food.detail}</p> */}
                 </div>
             ))}

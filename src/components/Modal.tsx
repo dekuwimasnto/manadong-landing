@@ -20,10 +20,10 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, imageSrc, detail 
                 </svg>
                 </button>
                 <img src={imageSrc} alt={title} className="w-full h-auto mb-2" />
-                <h2 className="text-left text-xl font-bold text-blue-800 pl-4">{title}</h2>
+                <h2 className="text-left text-xl font-semibold text-blue-800 pl-4">{title}</h2>
                 <p className="p-4 text-wrap w-72">{detail}</p>
                 {/* <p className="p-4 text-wrap w-72">Steamed rice, 2 pieces of corn fritters, and squid with back sauce.</p> */}
-                <h2 className='text-red-500 p-4 font-bold'>Rp. 40,000</h2>
+                <h2 className='text-red-500 p-4 font-semibold'>Rp. 40,000</h2>
             </div>
         </div>
     );
