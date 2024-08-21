@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.order-page {
+    text-align: center; /* Menyelaraskan teks ke tengah */
+  }
+  
+  .order-buttons {
+    display: flex;
+    justify-content: space-around; /* Menjarakkan tombol secara merata */
+  }
+  
+  .order-button {
+    background-color: #fff; /* Warna latar belakang tombol */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .platform-logo {
+    font-size: 24px;
+    font-weight: bold;
+    /* Tambahkan properti untuk menampilkan logo jika ada */
+  }

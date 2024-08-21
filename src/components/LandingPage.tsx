@@ -5,8 +5,14 @@ import twenty from '../assets/20percent.png'
 import bundle from '../assets/bundle.png'
 import ReviewComponent from './ReviewComponent';
 import FoodGrid from './FoodGrid';
+import { useNavigate } from 'react-router-dom';
 
 const LandingPage: React.FC = () => {
+    const navigate = useNavigate();
+    const handleOrderNowClick = () =>{
+        navigate('/order');
+    }
+
   return (
     <div className="min-h-screen flex flex-col bg-red-200">
         {/* MANADONG */}
@@ -28,38 +34,10 @@ const LandingPage: React.FC = () => {
             <h2 className="font-semibold mb-4 text-blue-800 p-5">Our Menu</h2>
             <div className="flex flex-wrap justify-center">
                 <FoodGrid/>
-                {/* <div className="text-center p-4">
-                    <img src={ayamRica} alt="Makanan" className="w-auto h-auto" />
-                    <p className="font-bold text-xs">Ayam Rica</p>
-                </div>
-                <div className="text-center p-4">
-                    <img src={cumiHitam} alt="Makanan" className="w-auto h-auto" />
-                    <p className="font-bold text-xs">Cumi Hitam</p>
-                </div>
-                <div className="text-center p-4">
-                    <img src={cakalang} alt="Makanan" className="w-auto h-auto" />
-                    <p className="font-bold text-xs">Cakalang Tinorasak</p>
-                </div>
-                <div className="text-center p-4">
-                    <img src={perkedel} alt="Makanan" className="w-auto h-auto" />
-                    <p className="font-bold text-xs">Perkedel Jagung</p>
-                </div>
-                <div className="text-center p-4">
-                    <img src={ayamWoku} alt="Makanan" className="w-auto h-auto" />
-                    <p className="font-bold text-xs">Ayam Woku</p>
-                </div>
-                <div className="text-center p-4">
-                    <img src={lauk} alt="Makanan" className="w-auto h-auto" />
-                    <p className="font-bold text-xs">Lauk Frozen</p>
-                </div>
-                <div className="text-center p-4">
-                    <img src={rabe} alt="Makanan" className="w-auto h-auto" />
-                    <p className="font-bold text-xs">Cakalang Rabe</p>
-                </div> */}
             </div>
             {/* BUTTON OUR MENU */}
             <div className='flex justify-center items-center'>
-                <button className="text-blue-800 font-bold py-2 px-4 rounded outline">Order Now</button>             
+                <button className="text-blue-800 font-bold py-2 px-4 rounded outline" onClick={handleOrderNowClick}>Order Now</button>             
             </div>
         </section>
         {/* PROMOTION */}
