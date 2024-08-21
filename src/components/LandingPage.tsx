@@ -1,16 +1,10 @@
 import React from 'react';
 import Background from '../assets/image 14.png'
-import ayamRica from '../assets/image 21.png'
-import cumiHitam from '../assets/Cumi Hitam.png'
-import cakalang from '../assets/Cakalang Tinorasak.png'
-import perkedel from '../assets/image 17.png'
-import ayamWoku from '../assets/Ayam Woku.png'
-import lauk from '../assets/image 19.png'
-import rabe from '../assets/image 16.png'
 import buy2 from '../assets/buy2.png'
 import twenty from '../assets/20percent.png'
 import bundle from '../assets/bundle.png'
 import ReviewComponent from './ReviewComponent';
+import FoodGrid from './FoodGrid';
 
 const LandingPage: React.FC = () => {
   return (
@@ -33,7 +27,8 @@ const LandingPage: React.FC = () => {
         <section className="flex-1 p-10 bg-gray-100">
             <h2 className="font-semibold mb-4 text-blue-800 p-5">Our Menu</h2>
             <div className="flex flex-wrap justify-center">
-                <div className="text-center p-4">
+                <FoodGrid/>
+                {/* <div className="text-center p-4">
                     <img src={ayamRica} alt="Makanan" className="w-auto h-auto" />
                     <p className="font-bold text-xs">Ayam Rica</p>
                 </div>
@@ -60,7 +55,7 @@ const LandingPage: React.FC = () => {
                 <div className="text-center p-4">
                     <img src={rabe} alt="Makanan" className="w-auto h-auto" />
                     <p className="font-bold text-xs">Cakalang Rabe</p>
-                </div>
+                </div> */}
             </div>
             {/* BUTTON OUR MENU */}
             <div className='flex justify-center items-center'>
