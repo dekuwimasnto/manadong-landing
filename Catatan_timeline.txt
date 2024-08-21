@@ -19,3 +19,9 @@ Melanjutkan project
 
 Jam 09:34
 Selesai membuat modal makanan, dan melanjutkan project
+
+Jam 11:53
+Commit OrderPage & OutletGrab
+
+Jam 12:30
+Membuat About dan finishing bagian footer dan lainnya
