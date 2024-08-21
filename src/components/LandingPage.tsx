@@ -22,7 +22,7 @@ const LandingPage: React.FC = () => {
                 <p className="text-lg mb-5 grid grid-cols-2">is a Manado dish with a spicy and appetizing flavour.</p>
                 <p className="text-lg mb-10 mt-3 text-red-500 font-bold">#NikmatnyaGaPakeRibet</p>
                 <div className='grid grid-cols-2'>
-                    <button className="text-blue-800 font-bold py-2 px-4 rounded outline">Order Now</button>
+                    <button className="text-blue-800 font-bold py-2 px-4 rounded outline" onClick={handleOrderNowClick}>Order Now</button>
                 </div>
             </div>
             <div className="flex items-center justify-center">

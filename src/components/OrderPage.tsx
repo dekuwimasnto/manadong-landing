@@ -14,10 +14,22 @@ const OrderPage: React.FC = () => {
       navigate('/');
     }
   };
-  const orderNow = useState<string | null>(null);
-  const handleOrderButtonClick = () => {
-    if(orderNow){
-        navigate('/outlet')
+  const grab = useState<string | null>(null);
+  const grabClick = () => {
+    if(grab){
+        navigate('/outletg')
+    }
+  }
+  const go = useState<string | null>(null);
+  const goClick = () => {
+    if(go){
+        navigate('/outletj')
+    }
+  }
+  const shopee = useState<string | null>(null);
+  const shopeeClick = () => {
+    if(shopee){
+        navigate('/outlets')
     }
   }
 
@@ -48,15 +60,15 @@ const OrderPage: React.FC = () => {
         <div className="flex flex-wrap justify-center items-center">
             <div className="w-1/3 md:w-1/4 lg:w-1/5 p-4">
                 <img src={Grab} alt="Image 1" className="w-full mb-10" />
-                <button className="mt-2 block mx-auto bg-blue-900 p-2 rounded-lg text-white" onClick={handleOrderButtonClick}>Order Now</button>
+                <button className="mt-2 block mx-auto bg-blue-900 p-2 rounded-lg text-white" onClick={grabClick}>Order Now</button>
             </div>
         <div className="w-1/3 md:w-1/4 lg:w-1/5 p-4">
             <img src={Gofood} alt="Image 2" className="w-full mb-10" />
-            <button className="mt-2 block mx-auto bg-blue-900 p-2 rounded-lg text-white">Order Now</button>
+            <button className="mt-2 block mx-auto bg-blue-900 p-2 rounded-lg text-white" onClick={goClick}>Order Now</button>
         </div>
         <div className="w-1/3 md:w-1/4 lg:w-1/5 p-4">
             <img src={Shopee} alt="Image 3" className="w-full mb-24" />
-            <button className="mt-2 block mx-auto bg-blue-900 p-2 rounded-lg text-white">Order Now</button>
+            <button className="mt-2 block mx-auto bg-blue-900 p-2 rounded-lg text-white" onClick={shopeeClick}>Order Now</button>
         </div>
     </div>
     </div>

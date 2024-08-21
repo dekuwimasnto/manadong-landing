@@ -9,10 +9,10 @@ const Header: React.FC = () => {
         </div>
       <nav>
         <ul className='text-white flex space-x-4'>
-          <li><a href="#home">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="#features">Eatery</a></li>
           <li><a href="#contact">News</a></li>
-          <li><a href="#contact">About Us</a></li>
+          <li><a href="/about">About Us</a></li>
         </ul>
       </nav>
     </header>

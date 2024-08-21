@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import duaAyam from '../assets/image 14.png'
 
-const OutletGrab: React.FC = () => {
+const OutletGojek: React.FC = () => {
   const [previousURL] = useState<string | null>(null);
   const navigate = useNavigate();
   const handleBackButtonClick = () => {
@@ -37,12 +37,12 @@ const OutletGrab: React.FC = () => {
             / <a href={'/'} className="">{previousURL}</a>
           </p>
           <p className="text-gray-500 text-sm mr-2">
-            GrabFood Outlet <a href={'/'} className="text-blue-600">{previousURL}</a>
+            GoFood Outlet <a href={'/'} className="text-blue-600">{previousURL}</a>
           </p>
       </div>
       <div className=''>
         <div className='p-2 mt-5'>
-          <p className='text-blue-900 font-semibold text-xl'>GrabFood Outlet</p>
+          <p className='text-blue-900 font-semibold text-xl'>GoFood Outlet</p>
         </div>
         <div className='grid grid-cols-2 p-2 mt-10'>
           <div className='cols-span-1'>
@@ -161,4 +161,4 @@ const OutletGrab: React.FC = () => {
   );
 };
 
-export default OutletGrab;
+export default OutletGojek;

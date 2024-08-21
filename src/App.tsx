@@ -5,6 +5,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import OrderPage from './components/OrderPage';
 import OutletG from './components/OutletGrab';
+import OutletS from './components/OutletShopee';
+import OutletJ from './components/OutletGojek';
+import About from './components/About';
 
 const App: React.FC = () => {
   return (
@@ -13,7 +16,10 @@ const App: React.FC = () => {
           <Routes>
               <Route path="/" element={<LandingPage />} />
               <Route path="/order" element={<OrderPage />} />
-              <Route path='/outlet' element={<OutletG/>}/>
+              <Route path='/outletg' element={<OutletG/>}/>
+              <Route path='/outlets' element={<OutletS/>}/>
+              <Route path='/outletj' element={<OutletJ/>}/>
+              <Route path='/about' element={<About/>}/>
           </Routes>
           <Footer />
       </Router>
